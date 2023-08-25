@@ -13,10 +13,19 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
 
 // Put your function here!
 // fn calculate_price_of_apples {
+fn calculate_price_of_apples(qty: u16) -> u16 {
+    let mut price = 0;
+   if qty > 40 {
+       price = 1;
+   } else {
+       price = 2;
+   }
+    return (qty * price);
+
+}
 
 // Don't modify this function!
 #[test]
